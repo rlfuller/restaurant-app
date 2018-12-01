@@ -10,7 +10,7 @@ body,td,th,p{
 body {
 	background-color: #fdfdfd;
 	margin: 0;
-	position:relative;
+	/* position:relative;   rlf */
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -51,12 +51,13 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
-  height: 80px;
+  height: 70px;  /* rlf chagne from 80 to 70 */
   background-color: #252831;
   text-align:center;
 }
 nav h1 {
   margin: auto;
+  padding-top: 20px; /*rlf */
 }
 nav h1 a {
   color: #fff;
@@ -106,16 +107,18 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
+  /* height: 50px; -- rlf  */
   background-color: #3397DB;
-  align-items: center;
+  /* align-items: center; -- rlf */
+  text-align: center; /* rlf*/
 }
 .filter-options h2 {
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem; /* rlf */
   font-weight: normal;
   line-height: 1;
   margin: 0 20px;
+  padding-top: 10px; /* rlf */
 }
 .filter-options select {
   background-color: white;
@@ -130,12 +133,15 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Listing ====================== */
+
 #restaurants-list {
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
-  padding: 30px 15px 60px;
+  /* padding: 30px 15px 60px; --rlf */
   text-align: center;
+  display: flex;  /* rlf */
+  flex-wrap: wrap;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -152,8 +158,9 @@ nav h1 a {
   display: block;
   margin: 0;
   max-width: 100%;
-  min-height: 248px;
+  /*min-height: 248px; rlf */
   min-width: 100%;
+  margin-top: 20px; /*rlf*/
 }
 #restaurants-list li h1 {
   color: #f18200;
@@ -183,6 +190,10 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
+.inside #maincontent {
+  display: flex;
+  flex-wrap: wrap;
+}
 .inside header {
   position: fixed;
   top: 0;
@@ -204,8 +215,8 @@ nav h1 a {
 }
 .inside #footer {
   bottom: 0;
-  position: absolute;
-  width: 50%;
+  position: relative; /* rlf */
+  /* width: 50%; */
 }
 #restaurant-name {
   color: #f18200;
@@ -273,3 +284,12 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+
+/* Mobile */
+/* @media screen and (max-width: 420px){
+  #maincontent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+} */
