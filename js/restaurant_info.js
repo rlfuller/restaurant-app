@@ -89,6 +89,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img'
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.alt = `Photo of restaurant, name: ${restaurant.name}`;
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
@@ -161,7 +162,7 @@ createReviewHTML = (review) => {
   li.appendChild(rating);
 
   const comments = document.createElement('p');
-  comments.innerHTML = review.comments;
+  comments.innerHTML = review.comments.trim();
   li.appendChild(comments);
 
   return li;
