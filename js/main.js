@@ -174,6 +174,7 @@ createRestaurantHTML = (restaurant) => {
 
   const address = document.createElement('p');
   address.innerHTML = restaurant.address;
+  address.classList.add("rest-addr");
   li.append(address);
 
   const more = document.createElement('a');
