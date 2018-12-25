@@ -109,7 +109,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   background-color: #3397DB;
   text-align: center;
 }
-.filter-options h2 {
+.filter-options h1 {
   color: white;
   font-size: 1.2rem;
   font-weight: normal;
@@ -157,7 +157,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   min-width: 100%;
   margin-top: 20px;
 }
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -246,7 +246,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   padding: 10px;
 }
 
-#reviews-container h2 {
+#reviews-container h1 {
   color: #f58500;
   font-size: 24pt;
   font-weight: 300;
@@ -376,7 +376,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   .inside #map-container {
     height: 400px;
   }
-  #reviews-container > h2 {
+  #reviews-container > h1 {
     text-align: center;
   }
   #restaurant-hours {
